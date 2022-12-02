@@ -1,0 +1,53 @@
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+.margin-bottom-md{
+    margin-bottom: 4.8rem !important;
+}
+.container{
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    max-width: 120rem;
+}
+.grid{
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9rem;
+}
+.grid--2-columns{
+    grid-template-columns: repeat(2,1fr);
+}
+.gird--3-columns{
+    grid-template-columns: repeat(3,1fr);
+}
+.heading-tertiary{
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+}
+.subheading{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #e67e22;
+    font-weight: 600;
+
+
+    display: block;
+    margin-bottom: 1rem;
+
+}
+ .heading-secondary{
+    font-size: 4.4rem;
+    /* font-weight: 700; */
+    margin-bottom: 9.6rem;
+    /* color: #333; */
+
+}
+.heading-secondary , .heading-tertiary{
+    font-weight: 700;
+    color: #333;
+}
+.gird--center{
+    align-items: center;
+}
