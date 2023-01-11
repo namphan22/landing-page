@@ -21,17 +21,16 @@
             <nav class="main-nav">
                <ul class="main-nav-list">
                   <li><a class="main-nav-link" href="#">How it works</a></li>
-                  <li><a class="main-nav-link" href="#">Meals</a></li>
+                  <li><a class="main-nav-link" href="#app">Meals</a></li>
                   <li><a class="main-nav-link" href="#">Testimonials</a></li>
                   <li><a class="main-nav-link" href="#">Pricing</a></li>
-                  <li><a href="#" class="nav-cta">Try for free</a></li>
+                  <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
                </ul>
             </nav>
             <button class="btn-mobile-nav">
-               <ion-icon class="btn-mobile-nav-icon btn-mobile-nav-icon-open"name="menu-outline"></ion-icon>
-               <ion-icon class="btn-mobile-nav-icon btn-mobile-nav-icon-close hidden"name="close-outline"></ion-icon>
-
-
+               <ion-icon class="icon-mobile-nav btn-mobile-nav-icon-open"name="menu-outline"></ion-icon>
+               <ion-icon class="icon-mobile-nav btn-mobile-nav-icon-close hidden"name="close-outline"></ion-icon> 
+                
 
             </button>
             
@@ -79,7 +78,7 @@
                </div>
             </div>
          </section>
-         <section class="section-how">
+         <section class="section-how" id="app">
             <div class="container">
                <p class="subheading">How it works</p>
                <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -92,11 +91,11 @@
                      Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!
                   </p>
                </div >
-               <div class="step-img">
-                  <img src="./img/app/app-screen-1.png" alt="">
+               <div class="step-img-box">
+                  <img src="./img/app/app-screen-1.png" alt="img step1">
                </div>
-               <div class="step-img">
-                  <img src="./img/app/app-screen-2.png" alt="">
+               <div class="step-img-box">
+                  <img src="./img/app/app-screen-2.png" alt="img step2">
                </div>
                <div class="step-text-box">
                   <p class="step-number">02</p>
@@ -112,7 +111,7 @@
                      Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!
                   </p>
                </div >
-               <div class="step-img">
+               <div class="step-img-box">
                   <img src="./img/app/app-screen-3.png" alt="">
                </div>
             </div>
@@ -218,7 +217,7 @@
             <div class="testimonial-container">
                <p class="subheading">Testimonials</p>
                <h2 class="heading-secondary">Once you try it, you can't go back</h2>
-               <div class="testimonials">
+               <div class="testimonials ">
                   <figure class="testimonial">
                      <img class="testimonial-img" src="./img/customers/ben.jpg" alt="ben customer">
                      <blockquote class="testimonial-text">
@@ -293,7 +292,7 @@
                <p class="subheading">Pricing</p>
                <h2 class="heading-secondary">Eating well without breaking the bank</h2>
             </div>
-            <div class="container-pricing margin-bottom-md">
+            <div class="container-pricing  grid--2-columns margin-bottom-md">
                <div class="pricing-plan plan1 pricing-plan--starter">
                   <header class="plan-header">
                      <p class="plan-name"><span>Start</span></p>
@@ -353,7 +352,7 @@
             <div class="container">
                <aside class="plan-detail">Prices include all applicable taxes. You can cancel at any time. Both plans include the following:</aside>
             </div>
-            <div class="container grid-4-colums">
+            <div class="container grid--4-columns">
                <div class="feature">
                   <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
                   <h5 class="feature-title">Never cook again!</h5>
@@ -413,7 +412,7 @@
          </section>
       </main>
       <footer class="footer-section">
-         <div class="container information-footer">
+         <div class="container grid grid--footer">
             <div class="social-media">
                <img src="./img/omnifood-logo.png" alt="#" class="logo-header">
                <div class="social-media-icon">
@@ -436,7 +435,7 @@
                   phanvanhoainam22@gmail.com
                </p>
             </div>
-            <div class="account">
+            <div class="nav-col">
                <span class="heading-footer">Account</span>
                <nav class="footer-nav">
                   <li class="nav-element"><span class="nav-elment-text">Create account</span></li>
@@ -445,7 +444,7 @@
                   <li class="nav-element"><span class="nav-elment-text">Android app</span></li>
                </nav>
             </div>
-            <div class="company">
+            <div class="nav-col">
                <span class="heading-footer">Company</span>
                <nav class="footer-nav">
                   <li class="nav-element"><span class="nav-elment-text">About Omnifood</span></li>
@@ -454,7 +453,7 @@
                   <li class="nav-element"><span class="nav-elment-text">Careers</span></li>
                </nav>
             </div>
-            <div class="resources">
+            <div class="nav-col">
                <span class="heading-footer">Resources</span>
                <nav class="footer-nav">
                   <li class="nav-element"><span class="nav-elment-text">Recipe directory</span></li>
@@ -464,7 +463,8 @@
             </div>
          </div>
       </footer>
-      <p class="test">Nam phan test</p>
+     
+
       <script src="./js/index.js"></script>
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    </body>
