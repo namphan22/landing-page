@@ -60,6 +60,7 @@
         grid-template-columns: 1fr;
         padding: 0 8rem;
         gap: 6rem;
+        
     }
     .hero-img{
         width: 60%;
@@ -143,23 +144,104 @@
     
 }
 
-@media (max-width:23em){
-    html{
-        font-size: 62.5%;
+/*responsive for smaller tablet(max width 704px)*/
+@media (max-width:44em){
+    .grid--4-columns{
+        grid-template-columns: repeat(2,1fr);
     }
-    .main-nav-list{
-        display: none;
+    .grid.gird--3-columns{
+        grid-template-columns: repeat(2,1fr);
     }
-    .btn-mobile-nav-icon{
-        display: inline-block;
-        height: 4.8rem;
-        width: 4.8rem;
-        color: black;
+    .container-pricing.gird--2-columns{
+        grid-template-columns: repeat(1,1fr);
     }
-   
+    .meal-list{
+        justify-self: center;
+        grid-column: 1/-1;/*note*/
+    }
+    .heading-secondary{
+        margin-bottom: 4.4rem;
+    }
+    .pricing-plan{
+        width:100%;
+    }
+    .grid--footer{
+        grid-template-columns: repeat(6,1fr);
+    }
+    .nav-col{
+
+        grid-row: 1;/*make nav-col start on row 1*/
+        grid-column: span 2;
+    }
+    .social-media,.contact-us{
+        grid-column:span 3;
+    }
+    .social-media>.logo-header{
+        width:60%;
+    }
+    
+}
+/*responsive for mobile(max width 544px)*/
+@media (max-width:34em){
+    .grid--2-columns,.grid.gird--3-columns,.grid--4-columns{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .hero{
+        padding: 0 3.2rem;
+    }
     .section-hero{
-        max-width: 100rem;
+        padding:2.4rem 0 6.4rem 0;
     }
-   
+    .btn,
+    .btn:link, .btn:visited{
+        padding:2rem 1.6rem;
+    }
+    .hero-img{
+        width:80%;
+    }
+    .logo-icon img{
+        height: 1.2rem;
+    }
+    .section-how{
+        padding:6rem 0;
+    }
+    .step-img-box:nth-child(2){
+        grid-row:1;
+    }
+    .step-img-box:nth-child(6){
+        grid-row:5;
+    }
+    .step-img-box{
+        transform: translateY(2.4rem);
+    }
+    .testimonials{
+        grid-template-columns: 1fr;
+    }
+    .section-meals{
+        padding: 6rem 0rem;
+    }
+    .gallery{
+        grid-template-columns: repeat(4,1fr);
+        gap:1.2rem;
+    }
+    .form-signup{
+        grid-template-columns: 1fr;
+    }
+    .form-img{
+        height:30rem;
+        grid-row:1;
+    }
+    .form-text{
+        padding:3.2rem;
+    }
+    .section-pricing{
+        padding :6rem 0;
+    }
+    .cta-section {
+        padding: 4.8rem 0 9rem 0;
+      }
+    
+    
 
 }
